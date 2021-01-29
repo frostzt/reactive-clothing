@@ -14,4 +14,6 @@ export const store = createStore(
 
 export const persistor = persistStore(store);
 
-export default store;
+const reduxStore = { store, persistor };
+
+export default reduxStore;
