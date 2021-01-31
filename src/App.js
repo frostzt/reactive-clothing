@@ -18,8 +18,6 @@ import { selectCurrentUser } from './redux/user/user.selectors';
 class App extends Component {
   unsubscribeFromAuth = null;
 
-  x = 10;
-
   componentDidMount() {
     const { setCurrentUser } = this.props;
 
@@ -42,7 +40,6 @@ class App extends Component {
   componentWillUnmount() {
     this.unsubscribeFromAuth();
   }
-
 
   render() {
     return (
